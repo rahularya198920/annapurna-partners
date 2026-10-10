@@ -25,12 +25,6 @@ document.querySelectorAll('nav').forEach((nav, index) => {
 });
 
 document.querySelectorAll('[data-enquiry-form]').forEach((form) => {
-  form.addEventListener('submit', (event) => {
-    event.preventDefault();
-    if (!form.reportValidity()) return;
-    const polish = document.documentElement.lang === 'pl';
-    const subject = polish ? 'Zapytanie o franczyzę Annapurna' : 'Annapurna franchise enquiry';
-    const body = Array.from(new FormData(form), ([name, value]) => `${name}: ${value}`).join('\n');
-    window.location.href = `mailto:rpmannapurna@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-  });
+  const polish = document.documentElement.lang === 'pl';
+  form.querySelector('[name="_next"]').value = new URL(polish ? 'thank-you-pl.html' : 'thank-you.html', window.location.href).href;
 });
