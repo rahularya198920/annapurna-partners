@@ -63,3 +63,7 @@ Source: [GitHub custom domain instructions](https://docs.github.com/en/pages/con
 Edit text in the relevant HTML file. Update English and Polish separately. The restaurant cards use readable class names and appear in both homepages and both dedicated restaurant pages, so change all relevant copies when updating addresses or contacts. Original layout CSS retains generated class names to preserve the published design. Framer editor changes will not automatically update this copy.
 
 Images and fonts were copied from the owner's public website on 10 October 2026. `asset-sources.json` records their original URLs. Keep the included font licenses with redistributed assets. Photos and branding retain their existing owners' rights.
+
+## Direct enquiry delivery
+
+English and Polish forms POST to FormSubmit for delivery to rahul@idaagroups.com. Submit one setup enquiry, then click the activation link in that inbox (check spam). Until activation, delivery is not verified. Default reCAPTCHA remains enabled, plus a honeypot field. FormSubmit processes submitted details; no secret API key is embedded. Native form validation works without JavaScript; JavaScript updates the thank-you URL for the current host. Thank-you pages confirm submission, not verified inbox delivery.
