@@ -32,3 +32,14 @@ nav[data-framer-name="Phone"].menu-open [data-framer-name="Navigation links"] { 
   .restaurant-card { padding: 28px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+.restaurant-photo-section { width: 100%; }
+.restaurant-photo-section h3 { font-family: Inter, sans-serif; font-size: 13px; font-weight: 500; letter-spacing: 1px; margin: 0 0 24px; color: #501d2a; }
+.restaurant-photo-gallery { columns: 3; column-gap: 20px; }
+.restaurant-photo-gallery figure { display: inline-block; width: 100%; margin: 0 0 24px; break-inside: avoid; }
+.restaurant-photo-gallery a { display: block; }
+.restaurant-photo-gallery img { display: block; width: 100%; height: auto; border-radius: 8px; }
+.restaurant-photo-gallery figcaption { font-family: Inter, sans-serif; font-size: 12px; line-height: 1.5; color: #501d2a; padding-top: 10px; }
+.restaurant-photo-gallery a:focus-visible { outline: 3px solid #501d2a; outline-offset: 5px; border-radius: 8px; }
+@media (max-width: 900px) { .restaurant-photo-gallery { columns: 2; } }
+@media (max-width: 560px) { .restaurant-photo-gallery { columns: 1; } }
