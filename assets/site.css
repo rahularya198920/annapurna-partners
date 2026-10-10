@@ -1,0 +1,34 @@
+html { scroll-behavior: smooth; }
+[id] { scroll-margin-top: 90px; }
+:focus-visible { outline: 2px solid #b49a68; outline-offset: 5px; }
+.enquiry-notice { font: 13px/1.7 Inter, sans-serif; color: #501d2a; max-width: 640px; }
+.enquiry-notice a { color: inherit; text-decoration: underline; }
+[data-framer-name="Menu"] { cursor: pointer; }
+nav[data-framer-name="Phone"] [data-framer-name="Navigation links"] { display: none; }
+nav[data-framer-name="Phone"].menu-open { height: auto !important; }
+nav[data-framer-name="Phone"].menu-open [data-framer-name="Navigation links"] { display: flex; }
+.restaurant-page { width: 100%; color: #272522; background: #f6f1e8; font: 15px/1.8 Inter, sans-serif; }
+.restaurant-hero { padding: 84px 24px 68px; text-align: center; max-width: 900px; margin: auto; }
+.restaurant-eyebrow { color: #8b713f; letter-spacing: 2px; font-size: 11px; font-weight: 600; margin-bottom: 20px; }
+.restaurant-page h1, .restaurant-page h2 { font-family: 'Cormorant Garamond', serif; font-weight: 500; line-height: 1.1; }
+.restaurant-page h1 { font-size: clamp(40px, 5vw, 64px); margin: 0 0 24px; }
+.restaurant-hero > p:last-child { max-width: 620px; margin: auto; }
+.restaurant-banner { display: block; object-fit: cover; width: 100%; height: clamp(240px, 35vw, 470px); }
+.restaurant-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 30px; max-width: 1120px; margin: auto; padding: 72px 24px; }
+.restaurant-card { background: #fffaf2; border: 1px solid #d9cdb9; padding: 40px; display: flex; flex-direction: column; align-items: flex-start; }
+.restaurant-card h2 { font-size: 38px; color: #501d2a; margin: 10px 0 18px; }
+.restaurant-card address { font-style: normal; margin: 20px 0; }
+.restaurant-card address a { color: #501d2a; display: block; width: fit-content; text-decoration: underline; text-underline-offset: 4px; overflow-wrap: anywhere; }
+.restaurant-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: auto; padding-top: 10px; }
+.restaurant-button { display: inline-block; background: #501d2a; color: #f6f1e8; padding: 13px 20px; font: 600 11px/1.5 Inter, sans-serif; text-decoration: none; letter-spacing: .7px; }
+.restaurant-button.secondary { background: transparent; border: 1px solid #b49a68; color: #501d2a; }
+.restaurant-invite { text-align: center; background: #501d2a; color: #f6f1e8; padding: 64px 24px; }
+.restaurant-invite h2 { font-size: clamp(32px, 4vw, 44px); margin-bottom: 18px; }
+.restaurant-invite p { margin-bottom: 26px; }
+.restaurant-invite .restaurant-button { background: #f6f1e8; color: #501d2a; }
+@media (max-width: 809px) {
+  .restaurant-hero { padding: 60px 24px 44px; }
+  .restaurant-grid { grid-template-columns: 1fr; padding: 40px 24px; gap: 24px; }
+  .restaurant-card { padding: 28px; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
