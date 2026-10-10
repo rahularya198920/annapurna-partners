@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://annapurnapartners.eu/sitemap.xml
