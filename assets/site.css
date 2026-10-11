@@ -71,3 +71,7 @@ nav[data-framer-name="Phone"].menu-open [data-framer-name="Navigation links"] { 
 .contact-next > div { display: flex; gap: 24px; flex-wrap: wrap; align-items: center; }
 .contact-secondary { color: #501d2a; font: 600 10px/1.6 Inter,sans-serif; letter-spacing: .8px; text-underline-offset: 5px; }
 @media (max-width: 809px) { .contact-hero { grid-template-columns: 1fr; gap: 32px; padding: 48px 24px 32px; } .contact-visual { height: 340px; } .contact-cards { grid-template-columns: 1fr; padding: 0 24px 32px; gap: 16px; } .contact-card { padding: 22px 18px; gap: 14px; } .contact-next { padding: 0 24px 48px; } }
+
+nav[data-framer-name] { background-color: #24221e !important; box-shadow: 0 1px 0 rgba(243,191,50,.25); }
+nav[data-framer-name] .framer-text { color: #f6f1e8 !important; --framer-text-color: #f6f1e8 !important; }
+nav[data-framer-name] a.framer-text:hover { color: #f3bf32 !important; }
