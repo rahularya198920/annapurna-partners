@@ -43,3 +43,31 @@ nav[data-framer-name="Phone"].menu-open [data-framer-name="Navigation links"] { 
 .restaurant-photo-gallery a:focus-visible { outline: 3px solid #501d2a; outline-offset: 5px; border-radius: 8px; }
 @media (max-width: 900px) { .restaurant-photo-gallery { columns: 2; } }
 @media (max-width: 560px) { .restaurant-photo-gallery { columns: 1; } }
+
+.contact-nav-item { flex: none; font: 500 11px Inter, sans-serif; }
+.contact-nav-item p { margin: 0; }
+.contact-page { width: 100%; background: #f6f1e8; color: #501d2a; font: 14px/1.8 Inter, sans-serif; }
+.contact-hero { max-width: 1120px; margin: auto; display: grid; grid-template-columns: 1.15fr 1fr; gap: 64px; padding: 72px 32px 48px; align-items: center; }
+.contact-eyebrow { font: 600 10px/1.6 Inter, sans-serif; letter-spacing: 1.8px; color: #8b713f; margin: 0 0 20px; }
+.contact-intro h1 { font: 500 clamp(40px, 4.3vw, 64px)/1.06 'Cormorant Garamond', serif; letter-spacing: -1px; margin: 0 0 28px; }
+.contact-intro h1 em { font-weight: 500; color: #8b713f; }
+.contact-description { max-width: 440px; color: #585049; }
+.contact-accent { display: block; width: 64px; height: 2px; background: #b49a68; margin-top: 32px; }
+.contact-visual { position: relative; height: 380px; border-radius: 180px 180px 8px 8px; overflow: hidden; background: #501d2a; }
+.contact-visual img { width: 100%; height: 100%; object-fit: cover; object-position: center 45%; }
+.contact-photo-note { position: absolute; inset: auto 0 0; padding: 48px 28px 24px; color: #f6f1e8; background: linear-gradient(transparent,rgba(30,20,12,.9)); font: 500 23px 'Cormorant Garamond',serif; letter-spacing: 2px; }
+.contact-photo-note span { display: block; font: 11px/1.6 Inter,sans-serif; letter-spacing: 0; margin-top: 8px; }
+.contact-cards { max-width: 1120px; margin: auto; padding: 0 32px 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.contact-card { display: flex; align-items: center; gap: 20px; background: #fffaf2; border: 1px solid #d9cdb9; padding: 28px; color: #501d2a; text-decoration: none; transition: border-color .2s,background .2s; }
+.contact-card:hover { border-color: #b49a68; background: #fffdf8; }
+.contact-card div { min-width: 0; }
+.contact-symbol { flex-shrink: 0; display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; border: 1px solid #d9cdb9; color: #8b713f; font-size: 24px; }
+.contact-card .contact-eyebrow { margin-bottom: 8px; }
+.contact-card h2 { font: 500 clamp(16px,1.7vw,22px)/1.5 Inter,sans-serif; margin: 0 0 6px; overflow-wrap: anywhere; }
+.contact-card p:last-child { margin: 0; color: #766a5d; font-size: 12px; }
+.contact-arrow { margin-left: auto; align-self: flex-start; color: #8b713f; font-size: 23px; }
+.contact-next { max-width: 1120px; padding: 0 32px 64px; margin: auto; }
+.contact-next > p { margin: 0 0 20px; }
+.contact-next > div { display: flex; gap: 24px; flex-wrap: wrap; align-items: center; }
+.contact-secondary { color: #501d2a; font: 600 10px/1.6 Inter,sans-serif; letter-spacing: .8px; text-underline-offset: 5px; }
+@media (max-width: 809px) { .contact-hero { grid-template-columns: 1fr; gap: 32px; padding: 48px 24px 32px; } .contact-visual { height: 340px; } .contact-cards { grid-template-columns: 1fr; padding: 0 24px 32px; gap: 16px; } .contact-card { padding: 22px 18px; gap: 14px; } .contact-next { padding: 0 24px 48px; } }
